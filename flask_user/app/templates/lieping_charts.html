@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <head>
+    <meta charset="utf-8">
+    <title>Proudly presented by ECharts</title>
+    {% for jsfile_name in script_list %}
+        <script src="{{ host }}/{{ jsfile_name }}.js"></script>
+    {% endfor %}
+    </head>
+{% endblock %}
+{% block title %}Flasky - LiePing_Chart{% endblock %}
+{% block content %}
+<div class="container" >
+    <div class="page-header">
+        <h1>行业分布图</h1>
+    </div>
+    <div class="col-md-4">
+        {{ myechart|safe }}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block title %}Flasky{% endblock %}
+{% block content %}
+<div class="container">
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+				<div class="container-fluid">
+					<!-- OVERVIEW -->
+					<div class="panel panel-headline">
+                        <div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>姓名</th>
+                                        <th>电话</th>
+                                        <th>邮箱</th>
+                                        <th>其他方式</th>
+                                        <th>平台</th>
+                                        <th>时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {% for item in items %}
+                                    <tr>
+                                        <td>{{ loop.index }}</td>
+                                        <td>{{ item[1] }}</td>
+                                        <td>{{ item[2] }}</td>
+                                        <td>{{ item[3] }}</td>
+                                        <td>{{ item[4] }}</td>
+                                        <td>{{ item[6] }}</td>
+                                        <td>{{ item[8] }}</td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+					</div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-6"><span class="panel-note"><i class="fa fa-clock-o"></i> Last 24 hours</span></div>
+                            <div class="col-md-6 text-right"><a href="#" class="btn btn-primary">View All Purchases</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
