@@ -2,7 +2,7 @@ alembic==1.0.8
 attrs==18.2.0
 Automat==0.7.0
 backcall==0.1.0
-bleach==3.0.2
+bleach==3.3.0
 blinker==1.4
 Click==7.0
 colorama==0.4.0
