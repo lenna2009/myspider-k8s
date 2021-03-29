@@ -65,7 +65,7 @@ pyecharts==0.5.11
 pyecharts-javascripthon==0.0.6
 pyecharts-jupyter-installer==0.0.3
 pyecharts-snapshot==0.1.9
-Pygments==2.2.0
+Pygments==2.7.4
 PyHamcrest==1.9.0
 PyMySQL==0.9.3
 python-dateutil==2.7.5
